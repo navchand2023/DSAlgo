@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>106/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>200/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 22 10:11:11 PDT 2023</td>
+<td>Started on:</td><td>Wed Jun 28 13:38:00 PDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>152 seconds (152026 ms)</td>
+<tr><td>Total time:</td><td>250 seconds (250626 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,79 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify register link", "User signing in"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/login&apos;]&quot;}
-  (Session info: chrome=114.0.5735.133)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.3&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac30c7d9dd0f43761dafa58cf7d86b0c, findElement {using=xpath, value=//a[@href=&apos;/login&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/wr/wd_g_c5j3hj...}, goog:chromeOptions: {debuggerAddress: localhost:55452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55452/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ac30c7d9dd0f43761dafa58cf7d86b0c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at pageObjects.SignIn_Page.gotoRegnpage(SignIn_Page.java:73)
-	at stepdefinition.SignIn_SD.the_user_clicks_on_register_link_on_signin_page(SignIn_SD.java:38)
-	at ✽.The user clicks on register link on signin page(file:///Users/Naveena/eclipse-workspace/DsAlgo/src/test/resources/Features/SignIn.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace41644548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace41644548'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/login&apos;]&quot;}
-  (Session info: chrome=114.0.5735.133)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.3&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac30c7d9dd0f43761dafa58cf7d86b0c, findElement {using=xpath, value=//a[@href=&apos;/login&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/wr/wd_g_c5j3hj...}, goog:chromeOptions: {debuggerAddress: localhost:55452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55452/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ac30c7d9dd0f43761dafa58cf7d86b0c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source)
-	at pageObjects.SignIn_Page.gotoRegnpage(SignIn_Page.java:73)
-	at stepdefinition.SignIn_SD.the_user_clicks_on_register_link_on_signin_page(SignIn_SD.java:38)
-	at ✽.The user clicks on register link on signin page(file:///Users/Naveena/eclipse-workspace/DsAlgo/src/test/resources/Features/SignIn.feature:10)
-</pre></div></td>
-<td>20</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -149,535 +76,1005 @@ Session ID: ac30c7d9dd0f43761dafa58cf7d86b0c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link", "User signing in"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Tree Data Structure Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "User signing in"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation of queue page", "The user is using on Queue page"</td>
-<td></td>
-<td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password mismatch", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on Register", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>5</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>4</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on Implementation using collections deque link", "The user is using on Queue page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "User signing in"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password with characters less than 8", "User registering a new user"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Terminologies" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "User signing in"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to QueueOp page and click on Practice Questions", "The user is using on Queue page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is logged in to DS Algo portal", "Graph"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Types of Linked List", "Linked List"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Implementation" Page", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
 <td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary Tree Traversals" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
 <td></td>
 <td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using array page", "The user is using on Queue page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Question page from Squares of a Sorted Array", "Use Array Data structure"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigated to "Deletion" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation using array page", "The user is using on Queue page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Types of Linked List", "Linked List"</td>
 <td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Implementation in Python" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Terminologies page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password with only numbers", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on Queue Operations link", "The user is using on Queue page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation of queue page", "The user is using on Queue page"</td>
-<td></td>
-<td>5</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Overview of Trees" page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using array page", "The user is using on Queue page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using array page", "The user is using on Queue page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "ARRAY" Data Structure Page", "Use Array Data structure"</td>
 <td></td>
 <td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is logged in to DS Algo portal", "The user is using on Queue page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Types of Binary trees" Page", "The user is using Tree data structure page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password with only numbers", "User registering a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "The user is using on Queue page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error message below repeat password textbox", "User registering a new user"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to "Types of linked list" page", "Linked List"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click getstarted link on  home page without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>4</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user validating "Practice Questions" page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is succesfully able to register", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using collections page", "The user is using on Queue page"</td>
-<td></td>
-<td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>3</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Tree Traversals" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is logged in to DS Algo portal", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Applications of Binary trees" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary trees" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User launch home page of an dsalgo project", "User launch home page of an dsalgo project"</td>
 <td></td>
 <td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Queue Operations page", "The user is using on Queue page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Traversal page", "Linked List"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for commonly used password", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Queue Data Structure Page", "The user is using on Queue page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error message below password textbox", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "The user is using on Queue page"</td>
-<td></td>
-<td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary Tree Traversals" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error message below username textbox", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Types of Trees" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary Search Trees" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Implementation Of BST" Page", "The user is using Tree data structure page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Arrays Using List page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
 <td></td>
-<td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation of Queue in Python link page", "The user is using on Queue page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using collections page", "The user is using on Queue page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Time Complexity page", "DataStructures"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is logged in to DS Algo portal", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation using collections page", "The user is using on Queue page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation page having an tryeditor", "Stack"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password with characters less than 8", "User registering a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on Implementation using array link", "The user is using on Queue page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "User signing in"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Traversals illustration" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Implementation of Binary Trees" Page", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on sign in", "User launch home page of an dsalgo project"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for username already exists", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using collections page", "The user is using on Queue page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password too similar to your other personal information", "User registering a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor", "The user is using on Queue page"</td>
-<td></td>
-<td>2</td>
-<td>runner.TestRunner@16293aa2</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
 <td></td>
 <td>1</td>
-<td>runner.TestRunner@16293aa2</td></tr>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Terminologies" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Creating a Linked List page", "Linked List"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Time Complexity page", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Introduction page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password too similar to your other personal information", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Time Complexity page", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Basic Operations in Lists page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary Search Trees" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Question page from Find Numbers with Even Number of Digits", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for commonly used password", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph Representations page", "Graph"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in Page", "Linked List"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user validating "Practice Questions" page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor", "The user is using on Queue page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Arrays in Python page", "Use Array Data structure"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Overview of Trees" page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SignInPage", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Arrays Using List page", "Use Array Data structure"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Stack"</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Max Consecutive Ones", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Implement Linked List in Python page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Applications of Array page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph page and click on Graph Representations link", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Basic Operations in Lists page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Deletion page", "Linked List"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is logged in to DS Algo portal", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click getstarted link on  home page without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>10</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user validating "Practice Questions" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Types of Linked List", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Deletion page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is directed to "Stack" Page", "Stack"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on Implementation using collections deque link", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Squares of a Sorted Array", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on Register", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on dropdown without sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Deletion page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Tree Traversals" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Squares of a Sorted Array", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to "Introduction" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password mismatch", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Arrays in Python page", "Use Array Data structure"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Find Numbers with Even Number of Digits", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Practice Questions" in stack Page", "Stack"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using collections page", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Arrays Using List page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Find Numbers with Even Number of Digits", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph Representations page", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph page", "Graph"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Basic Operations in Lists page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for username already exists", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Max Consecutive Ones", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error message below username textbox", "User registering a new user"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Creating a Linked List page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Implement Linked List in Python page", "Linked List"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Search the array link", "Use Array Data structure"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph page", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph Data Structure page", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Stack"</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Insertion page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error message below password textbox", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Traversal page", "Linked List"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to tryEditor page with Run button from Traversal page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on Queue Operations link", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications page having an tryEditor", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is logged in to DS Algo portal", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Find Numbers with Even Number of Digits", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Types of Linked List", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Creating a Linked List page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Insertion page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Implementation in Python" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation of queue page", "The user is using on Queue page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Stack"</td>
+<td></td>
+<td>12</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Traversals illustration" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary Tree Traversals" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Arrays in Python page", "Use Array Data structure"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Terminologies page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Applications of Binary trees" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on Implementation using array link", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Queue Operations page", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in tryEditor for Max Consecutive Ones", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph representations page and click on Practice Questions", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to "creating linked list" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using array page", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is succesfully able to register", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Question page from Max Consecutive Ones", "Use Array Data structure"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Tree Data Structure Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Queue Data Structure Page", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Graph Representations page", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error message below repeat password textbox", "User registering a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation of Queue in Python link page", "The user is using on Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Binary trees" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation of queue page", "The user is using on Queue page"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigated to "Insertion" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Types of Binary trees" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Applications" in stack Page", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Arrays Using List page", "Use Array Data structure"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Graph"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Insertion page", "Linked List"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Squares of a Sorted Array", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Time Complexity page", "DataStructures"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Applications of Array page", "Use Array Data structure"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Data Structure introduction page", "DataStructures"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigated to "linked list" page", "Linked List"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Applications of Array page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using array page", "The user is using on Queue page"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user getting error message with invalid python code for Introduction page", "Linked List"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Question page from Search the array link", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify register link", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications of Array page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel", "User signing in"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Basic Operations in Lists page", "Use Array Data structure"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on sign in", "User launch home page of an dsalgo project"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Search the array link", "Use Array Data structure"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Operations in Stack" page", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user run the code in tryEditor with valid input for Introduction page", "Linked List"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigated to "Implementation linked list in python" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Implementation of Binary Trees" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigated to "Traversal" page", "Linked List"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to arrays in Python page", "Use Array Data structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Search the array link", "Use Array Data structure"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to "Types of Trees" Page", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syantax", "The user is using Tree data structure page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5158b42f</td></tr>
 </table><p>
 </body>
 </html>
