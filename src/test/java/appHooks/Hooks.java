@@ -49,8 +49,8 @@ public class Hooks {
 	public void afterstep(Scenario scenario) {
 		if (scenario.isFailed()) {
 			Loggerload.error("Steps Failed , Taking Screenshot");
-			//final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);--uncomment later..
-			//scenario.attach(screenshot, "image/png", "My screenshot");
+			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);//
+			scenario.attach(screenshot, "image/png", "My screenshot");
 			
 		
 		}
