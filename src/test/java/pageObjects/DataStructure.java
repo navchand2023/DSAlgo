@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import dsutilities.ConfigReader;
 import com.qa.utilities.ExcelUtility;
-import dsutilities.Loggerload;
+import dsutilities.LoggerLoad;
 import factory.DriverFactory;
 
 
@@ -147,7 +147,7 @@ public class DataStructure {
 			
 			String output= Output.getText();
 			System.out.println(output);
-			Loggerload.info(output);
+			LoggerLoad.info(output);
 		}
 		
 
@@ -156,7 +156,7 @@ public class DataStructure {
 			String errormessage = alert.getText();
 			alert.accept();
 			System.out.println(errormessage);
-			Loggerload.info(errormessage);
+			LoggerLoad.info(errormessage);
 			
 		}
 		

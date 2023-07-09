@@ -16,7 +16,7 @@ import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 
 import dsutilities.ConfigReader;
-import dsutilities.Loggerload;
+import dsutilities.LoggerLoad;
 
 public class Hooks {
 	private static WebDriver driver;
@@ -26,7 +26,7 @@ public class Hooks {
 	@BeforeAll
 	public static void before() throws Throwable {
 		//Get browser Type from config file
-		Loggerload.info("Loading Config file");
+		LoggerLoad.info("Loading Config file");
 		ConfigReader.loadConfig();
 		String browser = ConfigReader.getBrowserType();
 		System.out.println("Config reader got the browser :"+browser);
@@ -34,21 +34,21 @@ public class Hooks {
 		//Initialize driver from driver factory
 		driverfactory = new DriverFactory();
 		driver = driverfactory.initializeDrivers(browser);
-		Loggerload.info("Initializing driver for : "+browser);
+		LoggerLoad.info("Initializing driver for : "+browser);
 	
 	}
 
 	@Before
 	public void scenario(Scenario scenario) {
-		Loggerload.info("===============================================================================================");
-		Loggerload.info(scenario.getSourceTagNames() +" : "+scenario.getName());
-		Loggerload.info("-----------------------------------------------------------------------------------------------");
+		LoggerLoad.info("===============================================================================================");
+		LoggerLoad.info(scenario.getSourceTagNames() +" : "+scenario.getName());
+		LoggerLoad.info("-----------------------------------------------------------------------------------------------");
 		
 	}
 	@AfterStep
 	public void afterstep(Scenario scenario) {
 		if (scenario.isFailed()) {
-			Loggerload.error("Steps Failed , Taking Screenshot");
+			LoggerLoad.error("Steps Failed , Taking Screenshot");
 			final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);//
 			scenario.attach(screenshot, "image/png", "My screenshot");
 			
@@ -58,7 +58,7 @@ public class Hooks {
 
 	@AfterAll
 	public static void after() {
-		Loggerload.info("Closing Driver");
+		LoggerLoad.info("Closing Driver");
 		driverfactory.closeallDriver();
 	}
 }

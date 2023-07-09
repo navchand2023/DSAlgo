@@ -9,7 +9,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import com.qa.utilities.ExcelUtility;
 
 import dsutilities.ConfigReader;
-import dsutilities.Loggerload;
+import dsutilities.LoggerLoad;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -75,7 +75,7 @@ public class Queue_SD {
 	@Given("The user is in Implementation of queue  in Python Page")
 	public void the_user_is_in_implementation_of_queue_in_python_page() {
 	   queuepage.getImplimentationListsPage(); 
-	   Loggerload.info("Title of the page User is on "+queuepage.getPageTitle());
+	   LoggerLoad.info("Title of the page User is on "+queuepage.getPageTitle());
 	   System.out.println("The user is on !!@@^^&&"+queuepage.getPageTitle());
 	}
 
@@ -89,7 +89,7 @@ public class Queue_SD {
 	public void the_user_navigates_to_editor_page_with_run_button() {
 		String title = queuepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);
+		LoggerLoad.info("Title of the page User is on "+title);
 	}
 	//scenario
 	
@@ -185,13 +185,13 @@ public class Queue_SD {
 	public void the_user_should_be_redirected_to_implementation_using_array_page() {
 		String title = queuepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);
+		LoggerLoad.info("Title of the page User is on "+title);
 	}
 	//@tag1_queue_11
 	@Given("The user in Implementation using array page")
 	public void the_user_in_implementation_using_array_page() {
 		queuepage.getImpArrayPage(); 
-		Loggerload.info("Title of the page User is on "+queuepage.getPageTitle());
+		LoggerLoad.info("Title of the page User is on "+queuepage.getPageTitle());
 		System.out.println("The user is on "+queuepage.getPageTitle());
 	}
 
@@ -209,7 +209,7 @@ public class Queue_SD {
 	public void the_user_should_be_redirected_to_queue_operations_page() {
 		String title = queuepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);
+		LoggerLoad.info("Title of the page User is on "+title);
 	}
 	//@tag1_queue_15
 	@Given("The user in Queue Operations page")
@@ -235,7 +235,7 @@ public class Queue_SD {
 	public void the_user_is_directed_to_practice_page() {
 		String title = queuepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);  
+		LoggerLoad.info("Title of the page User is on "+title);  
 	}
 
 

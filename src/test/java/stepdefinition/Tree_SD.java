@@ -9,7 +9,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import com.qa.utilities.ExcelUtility;
 
 import dsutilities.ConfigReader;
-import dsutilities.Loggerload;
+import dsutilities.LoggerLoad;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -48,7 +48,7 @@ public class Tree_SD {
 	public void the_user_should_then_be_directed_to_page(String string) {
 		String title = treepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);
+		LoggerLoad.info("Title of the page User is on "+title);
 	}
 	//@tag2_tree_04
 	@Given("The user is on the {string} after logged in")
@@ -65,7 +65,7 @@ public class Tree_SD {
 	public void the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test() {
 		String title = treepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);
+		LoggerLoad.info("Title of the page User is on "+title);
 	}
 	//@tag2_tree_05
 	@Given("The user is in trees page having an tryEditor with a Run button to test")
@@ -129,7 +129,7 @@ public class Tree_SD {
 	public void the_user_should_be_redirected_to_of_tree_page(String string) {
 		String title = treepage.getPageTitle();
 		System.out.println("the user is on page :"+title);
-		Loggerload.info("Title of the page User is on "+title);
+		LoggerLoad.info("Title of the page User is on "+title);
 	}
 	
 }
