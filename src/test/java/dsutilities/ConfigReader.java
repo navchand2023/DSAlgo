@@ -35,7 +35,7 @@ public class ConfigReader {
 
 	public static String getBrowserType() {
 		String browser = properties.getProperty("browser");
-		Loggerload.info("Get property BrowserType");
+		LoggerLoad.info("Get property BrowserType");
 		if (browser != null)
 			return browser;
 		else

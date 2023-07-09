@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import dsutilities.ConfigReader;
 import com.qa.utilities.ExcelUtility;
-import dsutilities.Loggerload;
+import dsutilities.LoggerLoad;
 import factory.DriverFactory;
 
 public class Array {
@@ -213,7 +213,7 @@ public class Array {
 	
 	public void successmessage() {
 		String successmessage = submitsuccess.getText();
-		Loggerload.info(successmessage);
+		LoggerLoad.info(successmessage);
 	}
 	
 	public void invalidCode(String Sheetname, int RowNumber) throws Exception {

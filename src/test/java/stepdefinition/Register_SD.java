@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import dsutilities.LoggerLoad;
+import dsutilities.LoggerLoad;
 import pageObjects.Register_Page;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -81,6 +83,7 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
+		LoggerLoad.info("Error message is  "+alert);
 	    
 	}
 
@@ -101,6 +104,7 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
+		LoggerLoad.info("Error message is  "+alert);
 	}
 
 	@When("The user clicks {string} button after entering valid username  password with characters less than {int}")
@@ -114,6 +118,8 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
+		LoggerLoad.info("Error message is  "+alert);
+		Assert.assertEquals(alert.contains("8"), true); 
 	    
 	}
 
@@ -128,6 +134,7 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
+		Assert.assertEquals(alert.contains("numeric"), true); 
 	    
 	}
 
@@ -142,6 +149,7 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
+		Assert.assertEquals(alert.contains("personal"), true); 
 	    
 	}
 
@@ -156,7 +164,7 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
-	    
+		Assert.assertEquals(alert.contains("commonly"), true); 
 	}
 
 	@When("The user clicks {string} button after entering valid username  valid password and repeat password")
@@ -170,6 +178,7 @@ public class Register_SD {
 		String alert= "";		
 		alert=regnpage.getErrorMessage();
 		System.out.println("Error message :"+alert);
+		LoggerLoad.info("The user is logged in");
 		//Assert.assertTrue(alert.contains("New"));
 	    //New Account Created. You are logged in as numpy@108_2
 	}
