@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
 
 	@CucumberOptions(
 			//plugin = {"pretty", "html:target/nc.html"}, //reporting purpose
-			plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","html:target/nc.html"}, //reporting purpose
+			plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","html:target/nc.html","json:target/cucumber.json"}, //reporting purpose
 			monochrome=false,  //console output color
 			//tags = "@TS_003", //tags from feature file
 			features = {"src/test/resources/Features"}, //location of feature files
